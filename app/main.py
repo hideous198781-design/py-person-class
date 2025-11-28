@@ -10,7 +10,6 @@ class Person:
 
 def create_person_list(people: list):
     Person.people.clear()
-    result = []
     result = [Person(p["name"], p["age"]) for p in people]
 
     for p in people:
